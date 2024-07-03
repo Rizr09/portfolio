@@ -1,0 +1,21 @@
+---
+import Card from '../Card.astro'
+import { LINKS } from '../../lib/constants'
+---
+
+<Card
+  colSpan="md:col-span-2"
+  rowSpan="md:row-span-1"
+  title="Now Vibing"
+  href={LINKS.spotify}
+>
+  <div class="flex h-full w-full flex-col justify-center items-center">
+    <div>
+      <iframe
+        src="https://spotify-github-profile.kittinanx.com/api/view.svg?uid=fc8y4939uhihepg1ey5bvvvs6&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true"
+        width="300" 
+        class="pointer-events-none"
+      ></iframe>
+    </div>
+  </div>
+</Card>
